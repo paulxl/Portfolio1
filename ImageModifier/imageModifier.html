@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Simple Photo Editor</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-con" href="../imagesTopLevel/favicon.ico">
+    <link rel="stylesheet" href="imageModifier.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul id="navUL">
+
+            <li class="navLI"><a href="../landing.html" class="route">HOME</a></li>
+            <li class="navLI"><a href="../AboutMe/about.html" class="route">ABOUT ME</a></li>
+            <li class="navLI"><a href="../Garnets/garnet.html" class="route">THE GARNETS</a></li>
+            <li class='navLi'><a href='stats1.html' class='route'>Extras</a></li>
+            <li class="dropdown">
+                <a href="#" id="dropbtn" class="route">APPS</a>
+                <div class="dropdown-content">
+                    <a href="imageModifier.html" id="dropA">IMAGE FILTER</a>
+                    <a href="#" id="dropA">LOCAL PARKS</a>
+                    <a href="graph.html" id="dropA">GRAPHS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Simple Photo Editor</h1>
+        <br>
+        <hgroup id="hgroup1">
+
+            <h3 id="instructions">Select A Photo To Work With </h3>
+            <input type="file" accept='image/*' id='fileinput' />
+            <button onclick="resetFile()">Reset File</button>
+        </hgroup>
+        <a><em>If You Want To Save After Altering Picture</em></a>
+        <a><em>Click Right On Picture and Save to Disk</em></a>
+        <br><br>
+        <div id="inputs">
+            <div id="slideBars">
+                <form id="options">
+                    <div class="barsAndNames">
+                        <label for='red'>RED</label>
+                        <input type="range" min='-255' max='255' value='0' id='red'>
+                    </div>
+                    <div class="barsAndNames">
+                        <label for='green'>GREEN</label>
+                        <input type="range" min='-255' max='255' value='0' id='green'>
+
+                    </div>
+                    <div class="barsAndNames">
+                        <label for='blue'>BLUE</label>
+                        <input type="range" min='-255' max='255' value='0' id='blue'>
+
+                    </div>
+                    <div class="barsAndNames">
+                        <label for='brightness'>BRIGHTNESS</label>
+                        <input type="range" min='-255' max='255' value='0' id='brightness'>
+                    </div>
+                    <div class="barsAndNames">
+                        <label for='contrast'>CONTRAST</label>
+                        <input type="range" min='-255' max='255' value='0' id='contrast'>
+                    </div>
+                    <div class="barsAndNames">
+                        <label for='grayscale' id='grayscaleLabel'>GRAYSCALE</label>
+                        <input type='checkbox' id='grayscale' name="grayscale">
+                    </div>
+                </form>
+            </div>
+            <!--    close slide-bars    -->
+        </div>
+        <!--     close inputs     -->
+        <div>
+            <canvas id='canvas' width="100%" height="auto"></canvas>
+        </div>
+    </main>
+    <script src="imageModifier.js"></script>
+
+</body>
+
+</html>
