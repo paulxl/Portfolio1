@@ -54,13 +54,40 @@ p {
     /* flex-direction: row; */
 }
 
+#xlinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-bottom: 6vh;
+}
+
+#xlinks a {
+    padding: 0 40px;
+}
+
+i {
+    color: #20e0f5;
+}
+
+i:hover {
+    color: #2083f5
+}
+
+iframe {
+    height: 60px;
+    width: 100%;
+    /*background: pink;*/
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1)0%, rgba(32, 245, 230, 0.98) 50%, rgba(0, 212, 255, 1)100%);
+}
+
 
 /*******   Nav Bar  *******/
 
 .navbar {
     /* width: 100%; */
     /* float: left; */
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: center;

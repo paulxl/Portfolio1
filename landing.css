@@ -4,6 +4,14 @@
     color: darkblue;
 }
 
+iframe {
+    height: 60px;
+    width: 100%;
+    /*background: pink;*/
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1)0%, rgba(32, 245, 230, 0.98) 50%, rgba(0, 212, 255, 1)100%);
+}
+
 h1 {
     text-align: center;
 }
@@ -21,7 +29,7 @@ h1 {
     order: 2;
     flex: 0 1 auto;
     align-self: center;
-    padding: 0rem 4rem 0rem 0rem;
+    padding: 0rem 4rem 2rem 0rem;
 }
 
 #garnet222 {
@@ -40,6 +48,25 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+#xlinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+#xlinks a {
+    padding: 0 40px;
+}
+
+i {
+    color: #20e0f5;
+}
+
+i:hover {
+    color: #2083f5
 }
 
 
