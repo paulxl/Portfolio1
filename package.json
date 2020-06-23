@@ -1,0 +1,25 @@
+{
+  "name": "portfolio1",
+  "version": "1.0.0",
+  "description": "1st published portfolio",
+  "main": "landing.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulxl/Portfolio1.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "paulxl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulxl/Portfolio1/issues"
+  },
+  "homepage": "https://github.com/paulxl/Portfolio1#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.1"
+  }
+}

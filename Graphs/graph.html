@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="graph.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img src="../imagesTopLevel/ziaBlue.png" class="logo" alt="logo">
+        <ul id="navUL">
+            <li class="navLI"><a href="../landing.html" class="route">HOME</a></li>
+            <li class="navLI"><a href="../AboutMe/about.html" class="route">ABOUT ME</a></li>
+            <li class="navLI"><a href="../Garnets/garnet.html" class="route">THE GARNETS</a></li>
+            <li class='navLi'><a href='../Extras/extra.html' class='route'>EXTRAS</a></li>
+            <li class="dropdown">
+                <a href="#" id="dropbtn" class="route">APPS</a>
+                <div class="dropdown-content">
+                    <a href="../ImageModifier/imageModifier.html" id="dropA">IMAGE FILTER</a>
+                    <a href="#" id="dropA">LOCAL PARKS</a>
+                    <a href="graph.html" id="dropA">GRAPHS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <h1>A Simple App to Demonstrate Using Chart.js</h1>
+    <h3>We will start by generating a list of random numbers and graphing them in multiple ways.</h3>
+    <form id='getRandomNum'>
+        <label for='getNum'><h3>Hit the Submit Button to get started</h3></label>
+        <input type='submit' value='Submit' id='submit'>
+    </form>
+    <h3>Feel Free To Hit The Submit Button A Few Times To Get The Feel Of Random Numbers Viewed In Different Graph Sytles</h3><br><br>
+    <div class='container'>
+        <canvas id='canvas1'></canvas>
+    </div>
+    <div class='container'>
+        <canvas id='canvas2'></canvas>
+    </div>
+    <div class='container'>
+        <canvas id='canvas3'></canvas>
+    </div>
+
+</body>
+<script src="graph.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+
+</html>
