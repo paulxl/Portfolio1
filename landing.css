@@ -4,6 +4,17 @@
     color: darkblue;
 }
 
+a {
+    text-decoration: none;
+}
+
+iframe {
+    height: 60px;
+    width: 100%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1)0%, rgba(32, 245, 230, 0.98) 50%, rgba(0, 212, 255, 1)100%);
+}
+
 h1 {
     text-align: center;
 }
@@ -21,7 +32,7 @@ h1 {
     order: 2;
     flex: 0 1 auto;
     align-self: center;
-    padding: 0rem 4rem 0rem 0rem;
+    padding: 0rem 4rem 2rem 0rem;
 }
 
 #garnet222 {
@@ -35,11 +46,23 @@ h1 {
     align-self: center;
 }
 
-#rio {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+#xlinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 6vh;
+    margin-bottom: 8vh;
+}
+
+#xlinks a {
+    padding: 0 40px;
+}
+
+i {
+    color: #20e0f5;
+}
+
+i:hover {
+    color: #2083f5
 }
 
 
@@ -84,9 +107,20 @@ h1 {
     margin-left: 20px;
     font-size: larger;
     text-align: center;
-    color: darkblue;
     padding: 15px 0px;
     position: relative;
+}
+
+.route {
+    color: darkblue;
+    font-size: larger;
+    word-spacing: -.4ch;
+}
+
+.dropA {
+    color: darkblue;
+    font-size: larger;
+    word-spacing: -.4ch;
 }
 
 a:hover {
@@ -101,13 +135,8 @@ a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 140px;
+    min-width: 180px;
     z-index: 1;
-}
-
-#dropLI {
-    margin-left: 70px;
-    font-size: larger;
 }
 
 .dropdown-content a {
