@@ -2,9 +2,9 @@
     "name": "portfolio1",
     "version": "1.0.0",
     "description": "1st published portfolio",
-    "main": "landing.html",
+    "main": "index.js",
     "scripts": {
-        "start": "landing.html"
+        "start": "node index.js"
     },
     "repository": {
         "type": "git",
@@ -21,5 +21,8 @@
     "homepage": "https://github.com/paulxl/Portfolio1#readme",
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.13.1"
+    },
+    "engines": {
+        "node": "14.2.0"
     }
 }
