@@ -25,9 +25,9 @@
             <li class="dropdown">
                 <a href="#" id="dropbtn" class="route">APPS</a>
                 <div class="dropdown-content">
-                    <a href="imageModifier.html" id="dropA">IMAGE FILTER</a>
-                    <a href="#" id="dropA">LOCAL PARKS</a>
-                    <a href="../Graphs/graph.html" id="dropA">GRAPHS</a>
+                    <a href="imageModifier.html" class="dropA">IMAGE FILTER</a>
+                    <a href="#" class="dropA">LOCAL PARKS</a>
+                    <a href="../Graphs/graph.html" class="dropA">GRAPHS</a>
                 </div>
             </li>
         </ul>
@@ -36,49 +36,52 @@
     <main>
 
         <h1>Simple Photo Editor</h1>
-        <br>
+
         <hgroup id="hgroup1">
 
-            <h3 id="instructions">Select A Photo To Work With </h3>
+            <h2 id="instructions">Select A Photo To Work With </h2>
             <input type="file" accept='image/*' id='fileinput' />
-            <button onclick="resetFile()">Reset File</button>
+            <button onclick="resetFile()" id='reset'>Reset File</button>
+            <br><br>
         </hgroup>
-        <a><em>If You Want To Save After Altering Picture</em></a>
-        <a><em>Click Right On Picture and Save to Disk</em></a>
-        <br><br>
-        <div id="inputs">
-            <div id="slideBars">
-                <form id="options">
-                    <div class="barsAndNames">
-                        <label for='red'>RED</label>
-                        <input type="range" min='-255' max='255' value='0' id='red'>
-                    </div>
-                    <div class="barsAndNames">
-                        <label for='green'>GREEN</label>
-                        <input type="range" min='-255' max='255' value='0' id='green'>
-
-                    </div>
-                    <div class="barsAndNames">
-                        <label for='blue'>BLUE</label>
-                        <input type="range" min='-255' max='255' value='0' id='blue'>
-
-                    </div>
-                    <div class="barsAndNames">
-                        <label for='brightness'>BRIGHTNESS</label>
-                        <input type="range" min='-255' max='255' value='0' id='brightness'>
-                    </div>
-                    <div class="barsAndNames">
-                        <label for='contrast'>CONTRAST</label>
-                        <input type="range" min='-255' max='255' value='0' id='contrast'>
-                    </div>
-                    <div class="barsAndNames">
-                        <label for='grayscale' id='grayscaleLabel'>GRAYSCALE</label>
-                        <input type='checkbox' id='grayscale' name="grayscale">
-                    </div>
-                </form>
-            </div>
-            <!--    close slide-bars    -->
+        <div id='moreInstr'>
+            <a><em>If You Want To Save After Altering Picture</em></a><br>
+            <a><em>Click Right On Picture and Save to Disk</em></a>
         </div>
+        <br>
+        <!-- <div id="inputs"> -->
+        <div id="slideBars">
+            <form id="options">
+                <div class="barsAndNames">
+                    <label for='red'>RED</label>
+                    <input type="range" min='-255' max='255' value='0' id='red' class='range'>
+                </div>
+                <div class="barsAndNames">
+                    <label for='green'>GREEN</label>
+                    <input type="range" min='-255' max='255' value='0' id='green' class='range'>
+
+                </div>
+                <div class="barsAndNames">
+                    <label for='blue'>BLUE</label>
+                    <input type="range" min='-255' max='255' value='0' id='blue' class='range'>
+
+                </div>
+                <div class="barsAndNames">
+                    <label for='brightness'>BRIGHTNESS</label>
+                    <input type="range" min='-255' max='255' value='0' id='brightness' class='range'>
+                </div>
+                <div class="barsAndNames">
+                    <label for='contrast'>CONTRAST</label>
+                    <input type="range" min='-255' max='255' value='0' id='contrast' class='range'>
+                </div>
+                <div class="barsAndNames">
+                    <label for='grayscale' id='grayscaleLabel'>GRAYSCALE</label>
+                    <input type='checkbox' id='grayscale' class='largerCheckbox'>
+                </div>
+            </form>
+        </div>
+        <!--    close slide-bars    -->
+        <!-- </div> -->
         <!--     close inputs     -->
         <div>
             <canvas id='canvas' width="100%" height="auto"></canvas>

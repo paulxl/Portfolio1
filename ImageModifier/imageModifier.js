@@ -1,5 +1,5 @@
 const fileinput = document.getElementById("fileinput");
-// const fileinput = document.getElementById("fileinput").value = "";
+
 
 function resetFile() {
     const fileinput = document.querySelector('#fileinput');
@@ -19,7 +19,6 @@ function clearCanvas() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     imgData = null;
 }
-
 
 const canvas = document.getElementById("canvas");
 
