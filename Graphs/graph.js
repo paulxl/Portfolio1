@@ -16,6 +16,11 @@ window.addEventListener('load', function() {
         event.preventDefault();
         getRandom();
     });
+    const form2 = document.getElementById('getRandomNumBottom');
+    form2.addEventListener('submit', function(event) {
+        event.preventDefault();
+        getRandom();
+    });
 });
 let randomDigits = [];
 

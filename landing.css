@@ -1,7 +1,7 @@
 * {
     font-family: Monaco, "Sriracha";
     font-weight: 500;
-    color: darkblue;
+    color: #0000cc;
 }
 
 a {
@@ -9,7 +9,7 @@ a {
 }
 
 iframe {
-    height: 60px;
+    height: 80px;
     width: 100%;
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1)0%, rgba(32, 245, 230, 0.98) 50%, rgba(0, 212, 255, 1)100%);
@@ -50,7 +50,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 6vh;
-    margin-bottom: 8vh;
+    margin-bottom: 10vh;
 }
 
 #xlinks a {
@@ -62,7 +62,7 @@ i {
 }
 
 i:hover {
-    color: #2083f5
+    color: #0000cc
 }
 
 
@@ -112,13 +112,13 @@ i:hover {
 }
 
 .route {
-    color: darkblue;
+    color: #0000cc;
     font-size: larger;
     word-spacing: -.4ch;
 }
 
 .dropA {
-    color: darkblue;
+    color: #0000cc;
     font-size: larger;
     word-spacing: -.4ch;
 }

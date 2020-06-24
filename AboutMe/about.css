@@ -53,9 +53,6 @@ p {
 #logoContainer img {
     width: 70%;
     height: auto;
-    /* display: flex; */
-    /* align-items: baseline; */
-    /* flex-direction: row; */
 }
 
 #xlinks {
@@ -67,18 +64,15 @@ p {
 
 #xlinks a {
     padding: 0 40px;
+    color: #660000;
 }
 
-i {
-    color: #20e0f5;
-}
-
-i:hover {
-    color: #2083f5
+#xlinks a:hover {
+    color: #d2b38c;
 }
 
 iframe {
-    height: 60px;
+    height: 80px;
     width: 100%;
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1)0%, rgba(32, 245, 230, 0.98) 50%, rgba(0, 212, 255, 1)100%);
@@ -89,8 +83,6 @@ iframe {
 /*******   Nav Bar  *******/
 
 .navbar {
-    /* width: 100%; */
-    /* float: left; */
     padding-bottom: 40px;
     display: flex;
     align-items: center;

@@ -11,7 +11,7 @@ h2 {
     text-align: center;
     font-family: Monaco, "Sriracha";
     font-weight: 500;
-    color: darkblue;
+    color: #0000cc;
 }
 
 #comeGo {
@@ -83,14 +83,12 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid black; */
 }
 
 .logo {
     width: 9%;
     height: auto;
     float: left;
-    /* padding: 50px 120px; */
     padding-right: 60px;
     cursor: pointer;
     order: 3;
@@ -121,13 +119,15 @@ h2 {
 }
 
 .route {
-    color: darkblue;
+    color: #0000cc;
     font-size: larger;
+    word-spacing: -.4ch;
 }
 
 .dropA {
-    color: darkblue;
+    color: #0000cc;
     font-size: larger;
+    word-spacing: -.4ch;
 }
 
 a:hover {
@@ -142,7 +142,7 @@ a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 140px;
+    min-width: 180px;
     z-index: 1;
 }
 
