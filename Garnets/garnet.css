@@ -95,6 +95,37 @@ th {
 }
 
 
+/*******  Up Arrow ********/
+
+#top {
+    font-size: x-large;
+    line-height: 0;
+    background: white;
+    background-color: white;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    border-radius: 2px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none solid currentColor auto;
+    text-decoration-thickness: auto;
+    color: red;
+    transition: 300ms;
+    transition-property: opacity;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+
 /*******   Nav Bar  *******/
 
 .navbar {

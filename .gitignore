@@ -7,3 +7,4 @@ bin
 .metadata
 node_modules
 dist
+.env
