@@ -1,13 +1,24 @@
-h1 {
+* {
     text-align: center;
     color: #0000cc;
 }
 
-#underConstruction {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
+i {
+    color: red;
+}
+
+#mapid {
+    height: 720px;
+    width: 80%;
+    transform-origin: 0 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 100px;
+}
+
+.myDivIcon {
+    text-align: center;
+    color: red;
 }
 
 iframe {
