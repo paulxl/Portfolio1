@@ -1,7 +1,5 @@
-# Garnet Codes
+# Garnet Codes<hr>
 
-A portfolio site.
+A little collection of front-end apps to demonstrate various tools.
 
-The intent is take some of my works that are scattered around my varios sandboxes and consolidate them in a more presentable format.
 
-After building out the basics; it will be launched on the web @ garnetcodes.com 
