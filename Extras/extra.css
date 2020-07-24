@@ -1,5 +1,28 @@
+* {
+    font-family: Monaco, "Sriracha";
+    font-weight: 500;
+    color: #0000cc;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+b {
+    font-style: oblique;
+    font-size: 1.2em;
+}
+
+.article {
+    display: block;
+    padding: 2em;
+    width: 80%;
+    margin: 1em auto;
+}
+
 #egg {
-    height: 160px;
+    height: 100px;
     width: auto;
     align-items: center;
     margin-left: auto;
@@ -7,11 +30,8 @@
     display: block;
 }
 
-h2 {
+#intro {
     text-align: center;
-    font-family: Monaco, "Sriracha";
-    font-weight: 500;
-    color: #0000cc;
 }
 
 #comeGo {
