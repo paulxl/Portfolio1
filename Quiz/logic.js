@@ -18,7 +18,9 @@ btn2.addEventListener('click', () => {
     radioArr.forEach(function(id) {
         document.getElementById(id).checked = false;
     });
-    return false;
+    document.getElementById("score").innerHTML = "";
+    let sel = document.getElementById("chart");
+    sel.remove(1);
 });
 
 let score = 0;
