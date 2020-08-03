@@ -6,6 +6,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 const server = http.Server(app);
+app.use(express.static('public'));
 
 // app.listen(process.env.PORT);
 
