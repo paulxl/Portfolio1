@@ -6,6 +6,12 @@
 i {
     color: red;
 }
+#todayRise, #todaySet {
+    color: #ff9933;
+}
+#todayDawn, #todayDusk {
+    color: #ffcc33;
+}
 
 #mapid {
     height: 720px;

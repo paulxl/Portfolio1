@@ -1,3 +1,41 @@
+const event = new Date();
+let year = event.getFullYear();
+console.log('month  :' + event.getMonth());
+let month = event.getMonth();
+console.log('day  :'+ event.getDate() );
+let day = event.getDate();
+
+fetch(`https://api.sunrise-sunset.org/json?lat=27.3304986&lng=-82.4611353,&date=${year}-${month}-${day}&formatted=0`)
+    .then((response) => {
+    return response.json();
+}).then((data) => {
+    console.log(data);
+
+    let sunrise1 = data.results.sunrise;
+    let lrise = new Date(sunrise1);
+    lrise = lrise.toLocaleTimeString('en-US');
+    
+    let sunset1 = data.results.sunset;
+    let lset = new Date(sunset1);
+    lset = lset.toLocaleTimeString('en-US');
+    
+    let dawn1 = data.results.civil_twilight_begin;
+    let ldawn = new Date(dawn1);
+    ldawn = ldawn.toLocaleTimeString('en-US');
+    
+    let dusk1 = data.results.civil_twilight_end;
+    let ldusk = new Date(dusk1);
+    ldusk = ldusk.toLocaleTimeString('en-US');
+    
+    document.getElementById('todayDawn').innerHTML = "Dawn:   "+ ldawn;
+    document.getElementById('todayRise').innerHTML ="Sunrise:  "+ lrise;
+    document.getElementById('todaySet').innerHTML = "Sunset:   "+ lset;
+    document.getElementById('todayDusk').innerHTML = "Dusk:  "+ ldusk;
+    
+}).catch((err) => {
+    console.warn(err);
+});
+
 const mymap = L.map('mapid').setView([27.27, -82.409], 11);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
