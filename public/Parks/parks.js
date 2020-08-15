@@ -36,7 +36,7 @@ fetch(`https://api.sunrise-sunset.org/json?lat=27.3304986&lng=-82.4611353,&date=
     console.warn(err);
 });
 
-const mymap = L.map('mapid').setView([27.27, -82.409], 11);
+const mymap = L.map('mapid').setView([27.34, -82.53], 11);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
