@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-con" href="../imagesTopLevel/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blog.css">
+    <title>Blog 101</title>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../imagesTopLevel/ziaBlue.png" class="logo" alt="logo">
+        <ul id="navUL">
+            <li class="navLI"><a href="../index.html" class="route">HOME</a></li>
+            <li class="navLI"><a href="../AboutMe/about.html" class="route">ABOUT ME</a></li>
+            <li class="navLI"><a href="../Garnets/garnet.html" class="route">THE GARNETS</a></li>
+            <li class="dropdown">
+                <a href="#" id="dropbtn" class="route">APPS</a>
+                <div class="dropdown-content">
+                    <a href="../Quiz/quiz.html" class="dropA">Geology Quiz</a>
+                    <a href="../ImageModifier/imageModifier.html" class="dropA">IMAGE FILTER</a>
+                    <a href="../Parks/parks.html" class="dropA">LOCAL PARKS</a>
+                    <a href="../Graphs/graph.html" class="dropA">GRAPHS</a>
+                </div>
+            </li>
+            <li class='navLI'><a href='../Extras/extra.html' class='route'>EXTRAS</a></li>
+            <li class='navLI'><a href="blog.html" class="route">BLOG</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome To My Rambling Page : AKA miniBlog</h1>
+        <h3>These are ideas and ramblings; with the occasional code snips or other inserts. </h3>
+        <h3>They are posted with the most recent at the top.</h3>
+        <div class='blogInsert'>
+            <time datetime="" class="date"></time>
+            <div class='alt2'>
+
+            </div>
+        </div>
+        <div class='blogInsert'>
+            <time datetime="" class="date"></time>
+            <div class='alt1'>
+
+            </div>
+        </div>
+
+        <div class='blogInsert'>
+            <div class='alt2'>
+                <time datetime="2020-08-15" class="date">Aug 15, 2020</time>
+                <p>
+                    So yesteday I was looking around <a href='https://data.world'>data.world</a> for some ideas; which later lead me to <a href='https://www.census.gov/en.html'>The U.S. Census Bureau page</a>. 
+                </p>
+                <p>
+                    That is where I stumbled upon data for e-commerce. They have data from 1999 to present about how much of our commerce is e-commerce. And it got me wondering at what point will the percent level out?  
+                </p>
+                <p>
+                    So sometimes the best way to see data is to visualize it.  So let us graph it and see if we can get some insights.
+                </p>
+                <div class='container'>
+                    <canvas id="eCommerce1"></canvas>
+                </div>
+                <p>We get a trendline (not shown) with the formula:</p>
+                <p> y=0.0013x<sup>2</sup> + 0.342x + 1.5047</p>
+                <P>and a R<sup>2</sup> value = 0.9958</P>
+                <p>
+                    This clearly indicates on-line purchases as a percent of total purchases are growing.  With our current Covid-19 situation; this is likely to climb even higher in the following quarters as numbers get reported to the US Census Bureau.
+                </p>
+
+            </div>
+        </div>
+        <div class='blogInsert'>
+            <div class='alt1'>
+                <time datetime="2020-08-14" class="date">Aug 14, 2020</time>
+                <p>
+                Well lets kick this off...  I have always been hesitant to write or express my opinions and ramblings in a public format.  I mean who cares unless you truly have something profound to say &#129300; 
+                </p>
+                <p>
+                    Well now I have this website and hey it's a play thing. I play a lot in sandboxes and I kick little ideas around all the time.  So.. why not use a blog format to encourage me to share snippets of ideas that are not full blown apps or ideas earth shattering ideas. 
+                </p>
+                <p>
+                    Plus it has the benefit of forcing me to remember to push to GitHub more often.  So here goes nothing.
+                </p>
+            </div>
+        </div>
+        <div>
+            <iframe id="stripe1" frameborder="0"></iframe>
+        </div>
+        
+        <a id='top' href='#'>TOP&#11014;</a>
+    </main>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+<script src="blog.js"></script>
+</html>
